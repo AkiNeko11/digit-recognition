@@ -99,13 +99,17 @@ model:
 
 ## 依赖包
 
-- PyTorch >= 2.0.0
-- torchvision >= 0.15.0
-- numpy >= 1.21.0
-- matplotlib >= 3.5.0
-- seaborn >= 0.11.0
-- scikit-learn >= 1.0.0
-- jupyter >= 1.0.0
+- torch>=2.0.0
+- torchvision>=0.15.0
+- torchaudio>=2.0.0
+- numpy>=1.21.0
+- pandas>=1.3.0
+- matplotlib>=3.5.0
+- seaborn>=0.11.0
+- scikit-learn>=1.0.0
+- jupyter>=1.0.0
+- tqdm>=4.62.0
+- pyyaml>=6.0
 
 ## 许可证
 
