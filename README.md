@@ -2,6 +2,10 @@ this is a repo for handwritten digits recognition
 
 using data from mnist
 
+# 项目结构
+
+```bash
+
 digit-recognition/
 ├── data/                          # 数据目录
 │   ├── raw/                       # 原始数据（MNIST数据集）
@@ -46,3 +50,5 @@ digit-recognition/
 ├── .gitignore                   # Git忽略文件
 ├── README.md                    # 项目说明
 └── LICENSE                      # 许可证
+
+```
