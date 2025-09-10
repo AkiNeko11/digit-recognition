@@ -1,0 +1,20 @@
+data:
+  batch_size: 128
+  image_size: [28, 28]
+  num_classes: 10
+  val_split: 0.2
+
+model:
+  type: "mlp"  # cnn or mlp
+  learning_rate: 0.001
+  epochs: 10
+
+training:
+  early_stopping: true
+  save_best: true
+  device: "auto"  # auto, cpu, cuda
+
+paths:
+  data_dir: "./data"
+  model_dir: "./models"
+  results_dir: "./results"
