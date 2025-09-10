@@ -18,7 +18,8 @@ def main():
     
     # 创建数据加载器
     train_loader, val_loader, test_loader = create_data_loaders(
-        batch_size=config['data']['batch_size']
+        batch_size=config['data']['batch_size'],
+        val_split=config['data']['val_split']  
     )
     
     # 选择模型
