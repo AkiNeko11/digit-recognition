@@ -39,7 +39,7 @@ digit-recognition/
 
 ```bash
 # 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/AkiNeko11/digit-recognition.git
 cd digit-recognition
 
 # 创建虚拟环境
@@ -52,6 +52,7 @@ venv\Scripts\activate
 source venv/bin/activate
 
 # 安装依赖
+# 默认直接执行安装的是cpu版本的torch，如需使用gpu版本的请先安装torch再执行
 pip install -r requirements.txt
 ```
 
