@@ -1,3 +1,4 @@
+# 在项目根目录创建 test_data_loading.py
 import torch
 from src.models.cnn import DigitCNN
 from src.models.mlp import DigitMLP

@@ -1,9 +1,16 @@
 data:
   batch_size: 128
   val_split: 0.2
+  test_path: "data/kaggle/digit-recognizer/test.csv"  # 测试数据路径
 
 model:
-  type: "cnn"  # cnn or mlp
+  type: "mlp"  # cnn or mlp
   learning_rate: 0.001
   epochs: 10
+
+output:
+  save_path: "data/kaggle/digit-recognizer/submission.csv"  # 输出文件路径
+
+prediction:
+  batch_size: 128  # 预测批次大小
 
