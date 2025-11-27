@@ -9,6 +9,7 @@ digit-recognition/
 ├── config/                         # 配置文件
 │   └── config.yaml                 # 模型和训练参数配置
 ├── data/                           # 数据目录
+│   ├── kaggle                      # kaggle测试数据
 │   └── raw/                        # 原始数据（MNIST数据集）
 ├── models/                         # 训练好的模型
 │   └── best_model.pth              # 最佳模型权重
@@ -30,6 +31,7 @@ digit-recognition/
 ├── LICENSE                         # 许可证
 ├── README.md                       # 项目说明
 ├── requirements.txt                # 依赖包
+├── prediction.py                   # 预测脚本
 └── train.py                        # 训练脚本
 ```
 
@@ -85,11 +87,18 @@ jupyter lab
 data:
   batch_size: 128          # 批次大小
   val_split: 0.2           # 验证集分割
-
+  test_path: "data/kaggle/digit-recognizer/test.csv"  # 测试数据路径
+  
 model:
   type: "cnn"              # 模型类型：cnn 或 mlp
   learning_rate: 0.001     # 学习率
   epochs: 10               # 训练轮数
+
+output:
+  save_path: "data/kaggle/digit-recognizer/submission.csv"  # 输出文件路径
+
+prediction:
+  batch_size: 128          # 预测批次大小
 ```
 
 ## 模型性能
