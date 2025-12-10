@@ -31,7 +31,7 @@ digit-recognition/
 ├── LICENSE                         # 许可证
 ├── README.md                       # 项目说明
 ├── requirements.txt                # 依赖包
-├── prediction.py                   # 预测脚本
+├── prediction.py                   # 预测脚本，生成kaggle提交文件
 └── train.py                        # 训练脚本
 ```
 
@@ -78,6 +78,15 @@ jupyter lab
 ```
 
 然后打开`notebooks/`目录下的笔记本文件进行后续操作。
+
+### 4. 进行预测
+
+```bash
+# 使用kaggle测试集进行预测
+python prediction.py
+
+# 预测后会在config的save_path目录下生成submission.csv提交文件
+```
 
 ## 配置说明
 
