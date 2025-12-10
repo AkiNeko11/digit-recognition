@@ -4,7 +4,7 @@ data:
   test_path: "data/kaggle/digit-recognizer/test.csv"  # 测试数据路径
 
 model:
-  type: "mlp"  # cnn or mlp
+  type: "cnn"  # cnn or mlp
   learning_rate: 0.001
   epochs: 10
 
