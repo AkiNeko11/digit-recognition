@@ -26,6 +26,8 @@ digit-recognition/
 │   │   └── mlp.py                  # 多层感知机
 │   └── training/                   # 训练模块
 │       └── trainer.py              # 训练器
+├── visualize/                      # 可视化操作
+│   └── digit_painter.py            # 可视化代码
 ├── tests/                          # 测试代码
 ├── .gitignore                      # Git忽略文件
 ├── LICENSE                         # 许可证
@@ -86,6 +88,15 @@ jupyter lab
 python prediction.py
 
 # 预测后会在config的save_path目录下生成submission.csv提交文件
+```
+
+### 5. 可视化操作
+
+```bash
+# 进行可视化演示
+python digit_painter.py
+
+# 可进行手写数字测试
 ```
 
 ## 配置说明
